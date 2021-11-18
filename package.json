@@ -10,7 +10,7 @@
     "orange",
     "esoteric"
   ],
-  "repository": "git@github.com/jay-tux/zeus-syntax",
+  "repository": "git@github.com:jay-tux/zeus-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

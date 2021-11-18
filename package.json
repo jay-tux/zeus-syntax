@@ -1,0 +1,20 @@
+{
+  "name": "zeus-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "The perfect syntax theme for esoteric codenights!",
+  "keywords": [
+    "syntax",
+    "theme",
+    "zeus",
+    "orange",
+    "esoteric"
+  ],
+  "repository": "https://github.com/jay-tux/zeus-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

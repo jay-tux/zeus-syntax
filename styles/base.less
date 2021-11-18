@@ -1,0 +1,154 @@
+@import "syntax-variables";
+@import "fonts";
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      background-color: @syntax-gutter-background-color;
+    }
+    .cursor-line {
+      background-color: @syntax-gutter-background-color;
+      color: @syntax-gutter-text-color-selected;
+    }
+
+    .cursor-line-no-selection {
+      background-color: @syntax-gutter-background-color;
+      color: @syntax-gutter-text-color-selected;
+    }
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+atom-text-editor .gutter .line-number.folded {
+  color: @syntax-gutter-text-color-folded;
+}
+
+div.line.cursor-line {
+  border-top: 1px solid @zeus-orange;
+  border-bottom: 1px solid @zeus-orange;
+}
+
+// Syntax styles
+
+.setColor {
+  color: @zeus-orange;
+}
+
+.syntax--comment {
+  .setColor();
+  font-family: "Wingdings";
+}
+
+.syntax--keyword {
+  .setColor();
+  font-family: "Comic Mono";
+}
+
+.syntax--storage {
+  .setColor();
+  font-family: "Major Mono";
+}
+
+.syntax--constant {
+  .setColor();
+}
+
+.syntax--variable {
+  //color: @red;
+  .setColor();
+  font-family: "Fira Mono";
+}
+
+.syntax--invalid.syntax--illegal {
+  background-color: @red;
+}
+
+.syntax--string {
+  .setColor();
+  font-family: "Go Mono";
+}
+
+
+.syntax--punctuation {
+  .setColor();
+  font-family: "Fira Mono";
+  &.syntax--definition {
+    &.syntax--bold {
+      font-weight: bold;
+    }
+
+    &.syntax--italic {
+      font-style: italic;
+    }
+  }
+}
+
+.syntax--entity.syntax--name {
+  .setColor();
+  font-family: "Xanh Mono";
+}
+
+.syntax--entity {
+  .setColor();
+  &.syntax--name.syntax--type {
+    text-decoration: underline;
+  }
+}
+
+.syntax--meta {
+  .setColor();
+}
+
+.syntax--none {
+  .setColor();
+}
+
+.syntax--markup {
+  &.syntax--bold {
+    font-weight: bold;
+  }
+
+  &.syntax--italic {
+    font-style: italic;
+  }
+}
+
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+}
+
+
+// Mini editor
+
+atom-text-editor[mini] .scroll-view {
+  padding-left: 1px;
+}

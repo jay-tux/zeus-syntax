@@ -1,0 +1,15 @@
+.loadFont(@fnt, @w, @st, @atompth) {
+  @font-face {
+    font-family: @fnt;
+    font-weight: @w;
+    font-style: @st;
+    src: url('atom://zeus-syntax/resources/@{atompth}');
+  }
+}
+
+.loadFont('Fira Mono', normal, normal, 'fira.woff2');
+.loadFont('Go Mono', normal, normal, "go-mono.woff2");
+.loadFont('Comic Mono', normal, normal, "ComicMono.ttf");
+.loadFont('Wingdings', normal, normal, "wingding.ttf");
+.loadFont('Major Mono', normal, normal, "MajorMonoDisplay-Regular.ttf");
+.loadFont('Xanh Mono', normal, normal, "XanhMono-Italic.ttf");
